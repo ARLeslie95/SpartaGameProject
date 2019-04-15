@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="boot/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <!-- Health  -->
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-2">
+                <h5>Health: </h5>
+              </div>
+              <!-- Healthbar -->
+              <div class="col-md-1 col-md-offset healthbar"></div>
+              <div class="col-md-1 col-md-offset healthbar"></div>
+              <div class="col-md-1 col-md-offset healthbar"></div>
+              <div class="col-md-1 col-md-offset healthbar"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <input type="text" name="" value="">
+          </div>
+            <!-- Score -->
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-2 col-md-offset-3">
+                <h5>Score: </h5>
+              </div>
+              <div class="col-md-2 col-md-offset-3 score">
+                <h5 class="score">0</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Body -->
+    <div class="container">
+        <!-- First row of enemies -->
+      <div class="row enemy-top">
+        <div class="col-md-6 enemy enemy-left">
+          <img src="assets/images/stormtrooper.jpeg" alt="" class="enemy-dead">
+          <p class="word1">Even Longer Word</p>
+        </div>
+        <div class="col-md-6 enemy enemy-right">
+          <img src="assets/images/stormtrooper.jpeg" alt="" class="enemy-dead">
+          <p class="word2">Word</p>
+        </div>
+      </div>
+      <!-- Second row of enemies -->
+      <div class="row enemy-bottom">
+        <div class="col-md-6 enemy enemy-left">
+          <img src="assets/images/stormtrooper.jpeg" alt="" class="enemy-dead">
+          <p class="word3">Even Longer Word</p>
+        </div>
+        <div class="col-md-6 enemy enemy-right">
+          <img src="assets/images/stormtrooper.jpeg" alt="" class="enemy-dead">
+          <p class="word4">Word</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

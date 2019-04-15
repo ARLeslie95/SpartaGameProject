@@ -1,0 +1,33 @@
+header{
+  background-color: blue;
+  padding: 20px;
+}
+
+.healthbar{
+  background-color: red;
+  position: relative;
+  top: 7px;
+  left: 12px;
+  border: solid black 1px;
+  padding: 10px;
+}
+
+.enemy{
+  padding-top: 40px;
+}
+
+.enemy-right{
+  padding-left: 350px;
+}
+
+.enemy-left{
+  padding-left: 80px;
+}
+
+.enemy-bottom{
+  padding-top: 85px;
+}
+
+.enemy-dead{
+  display: none;
+}
