@@ -12,22 +12,57 @@ header{
   padding: 10px;
 }
 
-.enemy{
-  padding-top: 40px;
+img {
+  position:fixed;
+  border: solid black 1px;
 }
 
-.enemy-right{
-  padding-left: 350px;
+p{
+  position: fixed;
+  border: solid black 1px;
 }
 
-.enemy-left{
-  padding-left: 80px;
+#enemy0{
+  top: 125px;
+  left: 150px;
 }
 
-.enemy-bottom{
-  padding-top: 85px;
+#enemy1{
+  bottom: 462px;
+  left: 950px;
 }
 
-.enemy-dead{
+#enemy2{
+  bottom: 80px;
+  left: 450px;
+}
+
+#enemy3{
+  left: 1250px;
+  bottom: 80px;
+}
+
+#word0{
+  top: 355px;
+  left: 173px;
+}
+
+#word1{
+  top: 359px;
+  left: 977px;
+}
+
+#word2{
+  top: 741px;
+  left: 475px;
+}
+
+#word3{
+  top: 741px;
+  left: 1276px;
+}
+
+
+.enemy-dead, .word-dead{
   display: none;
 }
