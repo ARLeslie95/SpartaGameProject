@@ -1,8 +1,43 @@
-header{
-  background-color: blue;
+.header{
+  /* background-color: blue; */
   padding: 20px;
+  color: yellow;
 }
 
+.logo{
+  height: 13%;
+  top: 200px;
+  left: 208px;
+}
+
+.tag{
+  height: 3%;
+  top: 317px;
+  left: 300px;
+}
+
+.start-but{
+  height : 10%;
+  top: 525px;
+  left: 535px;
+}
+#start-but{
+  background-image: url("assets/images/start.png");
+  width: 271px;
+  height: 57px;
+  background-color: black;
+  position: relative;
+  top: 470px;
+  left: 593px;
+  border: black;
+}
+#myInput{
+  color: black;
+}
+
+body{
+  background-image: url("assets/images/space.png");
+}
 
 .healthbar{
   background-color: red;
@@ -16,11 +51,13 @@ header{
 img {
   position:fixed;
   border: solid black 1px;
+  height: 22%;
 }
 
 p{
   position: fixed;
   border: solid black 1px;
+  color: yellow;
 }
 
 #enemy0{
@@ -29,42 +66,46 @@ p{
 }
 
 #enemy1{
-  bottom: 462px;
-  left: 950px;
+  bottom: 514px;
+  left: 858px;
 }
 
 #enemy2{
   bottom: 80px;
-  left: 450px;
+  left: 368px;
 }
 
 #enemy3{
-  left: 1250px;
+  left: 1100px;
   bottom: 80px;
 }
 
 #word0{
-  top: 355px;
-  left: 173px;
+  top: 306px;
+  left: 267px;
 }
 
 #word1{
-  top: 359px;
+  top: 306px;
   left: 977px;
 }
 
 #word2{
   top: 741px;
-  left: 475px;
+  left: 485px;
 }
 
 #word3{
-  top: 741px;
-  left: 1276px;
+  top: 740px;
+  left: 1217px;
+}
+
+#game-over{
+  left: -500px;
 }
 
 
-.enemy-dead, .word-dead{
+.enemy-dead, .word-dead, .start{
   display: none;
 }
 
