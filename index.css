@@ -3,6 +3,7 @@ header{
   padding: 20px;
 }
 
+
 .healthbar{
   background-color: red;
   position: relative;
@@ -64,5 +65,9 @@ p{
 
 
 .enemy-dead, .word-dead{
+  display: none;
+}
+
+.health-lost{
   display: none;
 }
