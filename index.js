@@ -32,16 +32,6 @@ $(function(event){
   };
 
 
-
-  // function enemyDur(x, y){
-  //   timer1 = setTimeout(function(){
-  //     enemy = enemies[x];
-  //     enemy.className = "enemy-dead";
-  //     word = words[x];
-  //     word.className = "word-dead";
-  //   }, 3500 + 500*y);
-  // };
-
   function enemyDur(i, j) {
     if (i == 0){
       enemy0 = enemies[0];
