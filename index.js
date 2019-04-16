@@ -1,4 +1,15 @@
 $(function(event){
+
+  $("#start-but").on("click", function(){
+    $(".logo")[0].className = "start";
+    $(".tag")[0].className = "start";
+    $("#start-but")[0].className = "start";
+    $("header")[0].className = "header";
+    setTimeout(function(){
+      game();
+    }, 2000);
+  });
+
   function game() {
     enemies = $(".enemy-dead");
     words = $(".word-dead");
@@ -18,14 +29,14 @@ $(function(event){
   function healthCheck(i) {
 
     if (i <= 0) {
-      stopTimer();
       stopTimer0();
       stopTimer1();
       stopTimer2();
       stopTimer3();
       for (i = 0; i < enemies.length; i++){
-        enemies[i].className = "enemy-dead";
-        words[i].className = "word-dead";
+        stopTimer();
+        enemies[i].id = "game-over";
+        words[i].id = "game-over";
       }
       console.log("You dead");
     };
@@ -39,6 +50,8 @@ $(function(event){
       timer0 = setTimeout(function(){
         enemy0.className = "enemy-dead";
         word0.className = "word-dead";
+        word0.innerHTML = "";
+        console.log(word0.innerHTML);
         console.log("enemy 0 shoots");
         healthNo--;
         initEnemy(i, j, j);
@@ -52,6 +65,7 @@ $(function(event){
       timer1 = setTimeout(function(){
         enemy1.className = "enemy-dead";
         word1.className = "word-dead";
+        word1.innerHTML = "";
         console.log("enemy 1 shoots");
         healthNo--;
         initEnemy(i, j, j);
@@ -65,6 +79,7 @@ $(function(event){
       timer2 = setTimeout(function(){
         enemy2.className = "enemy-dead";
         word2.className = "word-dead";
+        word2.innerHTML = "";
         console.log("enemy2 shoots");
         healthNo--;
         initEnemy(i, j, j);
@@ -78,6 +93,7 @@ $(function(event){
       timer3 = setTimeout(function(){
         enemy3.className = "enemy-dead";
         word3.className = "word-dead";
+        word3.innerHTML = "";
         console.log("enemy3 shoots");
         healthNo--;
         initEnemy(i, j, j)
@@ -111,6 +127,7 @@ $(function(event){
       enemy.className = "enemy" + i;
       word = words[i];
       word.className = "word" + i;
+      word.innerHTML = wordSelect();
       // console.log("Enemy " + i + " has appeared");
       // console.log(enemy);
     },1000 + 1000*j);
@@ -132,13 +149,15 @@ $(function(event){
       var keycode = (event.keyCode ? event.keyCode : event.which);
       if (keycode == '13'){
         for (i = 0; i < words.length; i++){
-          if (words[i].innerHTML == myInput.val()){
+          word = document.querySelector("#word" + i);
+          console.log(word.innerHTML);
+          if (word.innerHTML == myInput.val()){
             console.log("yes");
             if(i == 0){
               enemy0.className = "enemy-dead";
               word0.className = "word-dead";
               stopTimer0();
-              score += 50;
+              score += word.innerHTML.length * 10;
               scoreDisp.innerHTML = score;
               initEnemy(i,2,4);
             }
@@ -146,7 +165,7 @@ $(function(event){
               enemy1.className = "enemy-dead";
               word1.className = "word-dead";
               stopTimer1();
-              score += 50;
+              score += word.innerHTML.length * 10;
               scoreDisp.innerHTML = score;
               initEnemy(i,2,4);
             }
@@ -154,7 +173,7 @@ $(function(event){
               enemy2.className = "enemy-dead";
               word2.className = "word-dead";
               stopTimer2();
-              score += 50;
+              score += word.innerHTML.length * 10;
               scoreDisp.innerHTML = score;
               initEnemy(i,2,4);
             }
@@ -162,7 +181,7 @@ $(function(event){
               enemy3.className = "enemy-dead";
               word3.className = "word-dead";
               stopTimer3();
-              score += 50;
+              score += word.innerHTML.length * 10;
               scoreDisp.innerHTML = score;
               initEnemy(i,2,4);
             };
@@ -173,9 +192,17 @@ $(function(event){
     });
   };
 
+  function wordSelect() {
+    var words = ["star", "wars", "jedi", "sith","lightsaber","luke","leia","han","vader","emperor","rebel","empire","falcon","anakin","endor","hoth","lando","chewie","r2d2","c3po"];
+    var selector = Math.floor(Math.random() * words.length);
+    return words[selector];
+  }
+
+
+
   // enemyGen();
   // inputCheck();
-  game();
+  // game();
 
 
 
