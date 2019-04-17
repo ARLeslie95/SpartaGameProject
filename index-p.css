@@ -7,38 +7,37 @@
 #logo{
   height: 13%;
   top: 200px;
-  left: 255px;
+  left: 290px;
 }
 
 #g-logo{
   height: 12%;
-  top: 120px;
-  left: 280px;
+  top: 135px;
+  left: 385px;
 }
 
 #tag{
   height: 3%;
-  top: 317px;
-  left: 328px;
+  top: 390px;
+  left: 375px;
 }
-
 
 #g-tag{
   height: 5%;
-  top: 250px;
-  left: 460px;
+  top: 280px;
+  left: 660px;
 }
 
 #score-tag{
   height: 6%;
-  top: 350px;
-  left: 350px;
+  top: 395px;
+  left: 505px;
 }
 
 #score{
-  font-size: 70px;
-  top: 320px;
-  left: 960px;
+  font-size: 80px;
+  top: 370px;
+  left: 1360px;
 }
 
 .start-but{
@@ -52,8 +51,8 @@
   height: 57px;
   background-color: black;
   position: relative;
-  top: 470px;
-  left: 593px;
+  top: 550px;
+  left: 795px;
   border: black;
 }
 
@@ -63,16 +62,30 @@
   height: 47px;
   background-color: black;
   position: relative;
-  top: 470px;
-  left: 490px;
+  top: 670px;
+  left: 740px;
   border: black;
 }
+
+.input{
+  padding: 10px;
+}
+
 #myInput{
   color: black;
+  font-size: 30px;
+}
+
+.col-md-3{
+  top: 12px;
+  left: 10px;
 }
 
 body{
   background-image: url("assets/images/space.png");
+}
+.health{
+  right: 70px;
 }
 
 .healthbar{
@@ -81,7 +94,7 @@ body{
   top: 7px;
   left: 12px;
   border: solid black 1px;
-  padding: 10px;
+  padding: 22px;
 }
 
 .health-lost{
@@ -102,47 +115,52 @@ p{
 }
 
 h5{
-  font-size: 17px;
+  font-size: 31px;
+  color: yellow;
 }
 
 #enemy0{
-  top: 125px;
-  left: 150px;
+  top: 150px;
+  left: 185px;
 }
 
 #enemy1{
-  bottom: 514px;
-  left: 858px;
+  top: 150px;
+  left: 1070px;
 }
 
 #enemy2{
-  bottom: 80px;
+  bottom: 190px;
   left: 368px;
 }
 
 #enemy3{
-  left: 1100px;
-  bottom: 80px;
+  left: 1253px;
+  bottom: 190px;
 }
 
 #word0{
-  top: 306px;
-  left: 267px;
+  top: 374px;
+  left: 318px;
+  font-size: 35px;
 }
 
 #word1{
-  top: 306px;
-  left: 977px;
+  top: 374px;
+  left: 1200px;
+  font-size: 35px;
 }
 
 #word2{
-  top: 741px;
-  left: 485px;
+  bottom: 150px;
+  left: 495px;
+  font-size: 35px;
 }
 
 #word3{
-  top: 740px;
-  left: 1217px;
+  bottom: 150px;
+  left: 1385px;
+  font-size: 35px;
 }
 
 #game-over{
