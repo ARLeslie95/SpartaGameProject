@@ -1,14 +1,53 @@
 $(function(event){
 
   $("#start-but").on("click", function(){
-    $(".logo")[0].className = "start";
-    $(".tag")[0].className = "start";
+    $("#logo")[0].className = "start";
+    $("#tag")[0].className = "start";
     $("#start-but")[0].className = "start";
     $("header")[0].className = "header";
+    document.querySelector("#myInput").focus();
     setTimeout(function(){
       game();
-    }, 2000);
+    }, 1000);
   });
+
+  $("#retry").on("click", function(){
+    $("#g-logo")[0].className = "start";
+    $("#g-tag")[0].className = "start";
+    $("#score-tag")[0].className = "start";
+    $("#score")[0].className = "start";
+    $("#retry")[0].className = "start";
+    $("header")[0].className = "header";
+    score = 0;
+    $(".score")[0].innerHTML = score;
+    healthLost = $(".health-lost");
+    for (i = 0; i < healthLost.length; i++){
+      healthLost[i].className = "col-md-1 healthbar";
+      console.log($(".healthbar"));
+    }
+    document.querySelector("#myInput").focus();
+    setTimeout(function() {
+      for (var i = 0; i < enemies.length; i++) {
+        enemies[i].className = "enemy-dead";
+        enemies[i].id = "enemy" + i;
+        words[i].className = "word-dead";
+        words[i].id = "word" + i;
+      }
+
+      game();
+    }, 1000)
+  });
+
+  function gameOver() {
+    $("#g-logo")[0].className = "";
+    $("#g-tag")[0].className = "";
+    $("#score-tag")[0].className = "";
+    $("#score")[0].className = "";
+    $("#retry")[0].className = "";
+    $("header")[0].className = "start";
+    console.log(score);
+    $("#score")[0].innerHTML = score;
+  };
 
   function game() {
     enemies = $(".enemy-dead");
@@ -33,12 +72,12 @@ $(function(event){
       stopTimer1();
       stopTimer2();
       stopTimer3();
+      stopTimer();
       for (i = 0; i < enemies.length; i++){
-        stopTimer();
         enemies[i].id = "game-over";
         words[i].id = "game-over";
       }
-      console.log("You dead");
+      gameOver();
     };
   };
 
@@ -193,17 +232,9 @@ $(function(event){
   };
 
   function wordSelect() {
-    var words = ["star", "wars", "jedi", "sith","lightsaber","luke","leia","han","vader","emperor","rebel","empire","falcon","anakin","endor","hoth","lando","chewie","r2d2","c3po"];
+    var words = ["star", "wars", "jedi", "sith","lightsaber","luke","leia","han","vader","emperor","rebel","empire","falcon","anakin","endor","hoth","lando","chewie","r2d2","c3po", "darth","xwing","tie","clone","boba","jango","jabba","ewok","wampa","jawa","gungan","bespin","yavin","naboo","kamino","grievous","dooku","obiwan","maul","yoda","bothan","kylo","rey","finn","poe","jakku","snoke","revan","katarn","asajj","thrawn"];
     var selector = Math.floor(Math.random() * words.length);
     return words[selector];
   }
-
-
-
-  // enemyGen();
-  // inputCheck();
-  // game();
-
-
 
 });

@@ -4,16 +4,40 @@
   color: yellow;
 }
 
-.logo{
+#logo{
   height: 13%;
   top: 200px;
-  left: 208px;
+  left: 255px;
 }
 
-.tag{
+#g-logo{
+  height: 12%;
+  top: 120px;
+  left: 280px;
+}
+
+#tag{
   height: 3%;
   top: 317px;
-  left: 300px;
+  left: 328px;
+}
+
+#g-tag{
+  height: 5%;
+  top: 250px;
+  left: 460px;
+}
+
+#score-tag{
+  height: 6%;
+  top: 350px;
+  left: 350px;
+}
+
+#score{
+  font-size: 70px;
+  top: 320px;
+  left: 960px;
 }
 
 .start-but{
@@ -29,6 +53,17 @@
   position: relative;
   top: 470px;
   left: 593px;
+  border: black;
+}
+
+#retry{
+  background-image: url("assets/images/retry.png");
+  width: 385px;
+  height: 47px;
+  background-color: black;
+  position: relative;
+  top: 470px;
+  left: 490px;
   border: black;
 }
 #myInput{
@@ -48,6 +83,10 @@ body{
   padding: 10px;
 }
 
+.health-lost{
+  display: none;
+}
+
 img {
   position:fixed;
   border: solid black 1px;
@@ -58,6 +97,11 @@ p{
   position: fixed;
   border: solid black 1px;
   color: yellow;
+  font-size: 18px;
+}
+
+h5{
+  font-size: 17px;
 }
 
 #enemy0{
@@ -106,9 +150,5 @@ p{
 
 
 .enemy-dead, .word-dead, .start{
-  display: none;
-}
-
-.health-lost{
   display: none;
 }
