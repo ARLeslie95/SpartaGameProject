@@ -1,14 +1,32 @@
 $(function(event){
+  function sound(src){
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function(){
+      this.sound.play();
+    }
+    this.stop = function(){
+      this.sound.pause();
+    }
+  };
+
 
   $("#start-but").on("click", function(){
     $("#logo")[0].className = "start";
     $("#tag")[0].className = "start";
     $("#start-but")[0].className = "start";
     $("header")[0].className = "header";
+    theme = new sound("assets/sounds/theme.mp3");
+    theme.play();
     document.querySelector("#myInput").focus();
     setTimeout(function(){
+      theme.stop();
       game();
-    }, 1000);
+    }, 2500);
   });
 
   $("#retry").on("click", function(){
@@ -23,7 +41,6 @@ $(function(event){
     healthLost = $(".health-lost");
     for (i = 0; i < healthLost.length; i++){
       healthLost[i].className = "col-md-1 healthbar";
-      console.log($(".healthbar"));
     }
     document.querySelector("#myInput").focus();
     setTimeout(function() {
@@ -39,13 +56,14 @@ $(function(event){
   });
 
   function gameOver() {
+    lose = new sound("assets/sounds/lose.mp3");
+    lose.play();
     $("#g-logo")[0].className = "";
     $("#g-tag")[0].className = "";
     $("#score-tag")[0].className = "";
     $("#score")[0].className = "";
     $("#retry")[0].className = "";
     $("header")[0].className = "start";
-    console.log(score);
     $("#score")[0].innerHTML = score;
   };
 
@@ -87,11 +105,11 @@ $(function(event){
       enemy0 = enemies[0];
       word0 = words[0];
       timer0 = setTimeout(function(){
+        laser = new sound("assets/sounds/laser.mp3");
+        laser.play();
         enemy0.className = "enemy-dead";
         word0.className = "word-dead";
         word0.innerHTML = "";
-        console.log(word0.innerHTML);
-        console.log("enemy 0 shoots");
         healthNo--;
         initEnemy(i, j, j);
         healthCheck(healthNo);
@@ -102,10 +120,11 @@ $(function(event){
       enemy1 = enemies[1];
       word1 = words[1];
       timer1 = setTimeout(function(){
+        laser = new sound("assets/sounds/laser.mp3");
+        laser.play();
         enemy1.className = "enemy-dead";
         word1.className = "word-dead";
         word1.innerHTML = "";
-        console.log("enemy 1 shoots");
         healthNo--;
         initEnemy(i, j, j);
         healthCheck(healthNo);
@@ -116,10 +135,11 @@ $(function(event){
       enemy2 = enemies[2];
       word2 = words[2];
       timer2 = setTimeout(function(){
+        laser = new sound("assets/sounds/laser.mp3");
+        laser.play();
         enemy2.className = "enemy-dead";
         word2.className = "word-dead";
         word2.innerHTML = "";
-        console.log("enemy2 shoots");
         healthNo--;
         initEnemy(i, j, j);
         healthCheck(healthNo);
@@ -130,10 +150,11 @@ $(function(event){
       enemy3 = enemies[3];
       word3 = words[3];
       timer3 = setTimeout(function(){
+        laser = new sound("assets/sounds/laser.mp3");
+        laser.play();
         enemy3.className = "enemy-dead";
         word3.className = "word-dead";
         word3.innerHTML = "";
-        console.log("enemy3 shoots");
         healthNo--;
         initEnemy(i, j, j)
         healthCheck(healthNo);
@@ -158,8 +179,6 @@ $(function(event){
     clearTimeout(timer3);
   };
 
-
-
   function initEnemy(i,j,z) {
     timer = setTimeout(function(){
       enemy = enemies[i];
@@ -167,8 +186,6 @@ $(function(event){
       word = words[i];
       word.className = "word" + i;
       word.innerHTML = wordSelect();
-      // console.log("Enemy " + i + " has appeared");
-      // console.log(enemy);
     },1000 + 1000*j);
     enemyDur(i,z);
   };
@@ -183,15 +200,15 @@ $(function(event){
 
 
   function inputCheck() {
-    var myInput = $("#myInput");
+    myInput = $("#myInput");
     myInput.keypress(function (event) {
       var keycode = (event.keyCode ? event.keyCode : event.which);
       if (keycode == '13'){
         for (i = 0; i < words.length; i++){
           word = document.querySelector("#word" + i);
-          console.log(word.innerHTML);
           if (word.innerHTML == myInput.val()){
-            console.log("yes");
+            explosion = new sound("assets/sounds/explosion.mp3")
+            explosion.play();
             if(i == 0){
               enemy0.className = "enemy-dead";
               word0.className = "word-dead";
