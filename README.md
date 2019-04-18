@@ -6,7 +6,7 @@ A Star Wars-themed, text-bases arcade shooter. Enemies will appear with randomly
 
 ## How to play
 
-When the start button is pressed, enemies will begin to appear. To shoot an enemy, type the word that appears with them into the text bar at the top of the page, and press enter. If the word is correctly typed, the enemy will be defeated and players will receive points based on the length of the word. Take too long to 'shoot' an enemy, and they'll shoot you, causing you to lose health. Play until you've lost all your health. May the force be with you!
+When the start button is pressed, enemies will begin to appear. To shoot an enemy, type the word that appears with them into the text bar at the top of the page, and press enter. If the word is correctly typed, the enemy will be defeated and players will receive points based on the length of the word. Take too long to 'shoot' an enemy, and they'll shoot you, causing you to lose health. Play until you've lost all of your health. May the force be with you!
 
 ## Instructions
 
