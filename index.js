@@ -33,7 +33,7 @@ $(function(event){
       clearTimeout(this.dur_timer);
     }
   };
-  
+
   var enemy00 = new enemy(0);
   var enemy01 = new enemy(1);
   var enemy02 = new enemy(2);
