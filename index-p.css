@@ -1,0 +1,173 @@
+.header{
+  /* background-color: blue; */
+  padding: 20px;
+  color: yellow;
+}
+
+#logo{
+  height: 13%;
+  top: 200px;
+  left: 290px;
+}
+
+#g-logo{
+  height: 12%;
+  top: 135px;
+  left: 385px;
+}
+
+#tag{
+  height: 3%;
+  top: 390px;
+  left: 375px;
+}
+
+#g-tag{
+  height: 5%;
+  top: 280px;
+  left: 660px;
+}
+
+#score-tag{
+  height: 6%;
+  top: 395px;
+  left: 505px;
+}
+
+#score{
+  font-size: 80px;
+  top: 370px;
+  left: 1360px;
+}
+
+.start-but{
+  height : 10%;
+  top: 525px;
+  left: 535px;
+}
+#start-but{
+  background-image: url("assets/images/start.png");
+  width: 271px;
+  height: 57px;
+  background-color: black;
+  position: relative;
+  top: 550px;
+  left: 795px;
+  border: black;
+}
+
+#retry{
+  background-image: url("assets/images/retry.png");
+  width: 385px;
+  height: 47px;
+  background-color: black;
+  position: relative;
+  top: 670px;
+  left: 740px;
+  border: black;
+}
+
+.input{
+  padding: 10px;
+}
+
+#myInput{
+  color: black;
+  font-size: 30px;
+}
+
+.col-md-3{
+  top: 12px;
+  left: 10px;
+}
+
+body{
+  background-image: url("assets/images/space.png");
+}
+.health{
+  right: 70px;
+}
+
+.healthbar{
+  background-color: red;
+  position: relative;
+  top: 7px;
+  left: 12px;
+  border: solid black 1px;
+  padding: 22px;
+}
+
+.health-lost{
+  display: none;
+}
+
+img {
+  position:fixed;
+  border: solid black 1px;
+  height: 22%;
+}
+
+p{
+  position: fixed;
+  border: solid black 1px;
+  color: yellow;
+  font-size: 18px;
+}
+
+h5{
+  font-size: 31px;
+  color: yellow;
+}
+
+#enemy0{
+  top: 150px;
+  left: 185px;
+}
+
+#enemy1{
+  top: 150px;
+  left: 1070px;
+}
+
+#enemy2{
+  bottom: 190px;
+  left: 368px;
+}
+
+#enemy3{
+  left: 1253px;
+  bottom: 190px;
+}
+
+#word0{
+  top: 374px;
+  left: 318px;
+  font-size: 35px;
+}
+
+#word1{
+  top: 374px;
+  left: 1200px;
+  font-size: 35px;
+}
+
+#word2{
+  bottom: 150px;
+  left: 495px;
+  font-size: 35px;
+}
+
+#word3{
+  bottom: 150px;
+  left: 1385px;
+  font-size: 35px;
+}
+
+#game-over{
+  left: -500px;
+}
+
+
+.enemy-dead, .word-dead, .start{
+  display: none;
+}
