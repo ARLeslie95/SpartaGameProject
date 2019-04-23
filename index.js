@@ -28,23 +28,12 @@ $(function(event){
     this.enemy = enemies[i];
     this.word = words[i];
     this.stagger = i;
-
-    // this.dur = function(j){
-    //   dur_timer = setTimeout(function(){
-    //     enemy.className = "enemy-dead";
-    //     word.className = "enemy-dead";
-    //     word.innerHTML = "";
-    //     healthNo-- ;
-    //     healthCheck(healthNo);
-    //     health[healthNo].className = "health-lost" ;
-    //   }, 5000 + 500*j)
-    // };
-
     this.stopTimer = function(){
       clearTimeout(this.init_timer);
       clearTimeout(this.dur_timer);
     }
   };
+  
   var enemy00 = new enemy(0);
   var enemy01 = new enemy(1);
   var enemy02 = new enemy(2);
