@@ -1,3 +1,4 @@
+
 # Sparta Game- Solo Project
 
 ## Word Wars
@@ -11,3 +12,4 @@ When the start button is pressed, enemies will begin to appear. To shoot an enem
 ## Instructions
 
 To play the game, clone this repo locally and then open the index.html file in your browser.
+
