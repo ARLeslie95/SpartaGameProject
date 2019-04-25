@@ -106,7 +106,7 @@ $(function(event){
     $(".score")[0].innerHTML = score;
     healthNo = 6;
     for (i = 0; i < health.length; i++){
-      health[i].className = "col-md-1 healthbar";
+      health[i].className = "col-md-1 col-xs-1 healthbar";
     }
     document.querySelector("#myInput").focus();
     setTimeout(function() {
