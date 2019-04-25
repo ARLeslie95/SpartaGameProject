@@ -3,7 +3,7 @@
 
 ## Word Wars
 
-A Star Wars-themed, text-bases arcade shooter. Enemies will appear with randomly assigned words, and players must type the word correctly to shoot the enemy. When players run out of health, they are given a final score.
+A Star Wars-themed, text-based arcade shooter. Enemies will appear with randomly assigned words, and players must type the word correctly to shoot the enemy. When players run out of health, they are given a final score.
 
 ## How to play
 
