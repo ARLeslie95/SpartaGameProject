@@ -4,6 +4,31 @@
   color: yellow;
 }
 
+
+
+.cells{
+  margin-top: 7%;
+  padding-bottom: 15%;
+}
+
+.cells img{
+
+}
+
+.cell{
+  margin: 5%;
+  margin-top: : 5%;
+}
+.words{
+
+  padding-left: 40%;
+  position: relative;
+  bottom: 25px;
+}
+
+.words p{
+
+}
 #logo{
   height: 13%;
   top: 200px;
@@ -98,52 +123,14 @@ p{
   position: fixed;
   border: solid black 1px;
   color: yellow;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 h5{
   font-size: 17px;
 }
 
-#enemy0{
-  top: 125px;
-  left: 150px;
-}
 
-#enemy1{
-  bottom: 514px;
-  left: 858px;
-}
-
-#enemy2{
-  bottom: 80px;
-  left: 368px;
-}
-
-#enemy3{
-  left: 1100px;
-  bottom: 80px;
-}
-
-#word0{
-  top: 306px;
-  left: 267px;
-}
-
-#word1{
-  top: 306px;
-  left: 977px;
-}
-
-#word2{
-  top: 741px;
-  left: 485px;
-}
-
-#word3{
-  top: 740px;
-  left: 1217px;
-}
 
 #game-over{
   left: -500px;

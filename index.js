@@ -166,6 +166,10 @@ function gameOver() {
   $("header")[0].className = "start";
   $("#score")[0].innerHTML = score;
   $("#myInput").val("");
+  for (var i = 0; i < words.length; i++){
+    enemyObj[i].stopTimer;
+    words[i].className = "word-dead";
+  }
 };
 
 $(function(event){
