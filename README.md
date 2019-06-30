@@ -3,7 +3,7 @@
 
 ## Word Wars
 
-A Star Wars-themed, text-bases arcade shooter. Enemies will appear with randomly assigned words, and players must type the word correctly to shoot the enemy. When players run out of health, they are given a final score.
+A Star Wars-themed, text-based arcade shooter. Enemies will appear with randomly assigned words, and players must type the word correctly to shoot the enemy. When players run out of health, they are given a final score.
 
 ## How to play
 
@@ -11,5 +11,5 @@ When the start button is pressed, enemies will begin to appear. To shoot an enem
 
 ## Instructions
 
-To play the game, clone this repo locally and then open the index.html file in your browser.
+To play the game, open https://arleslie95.github.io/SpartaGameProject/ . 
 

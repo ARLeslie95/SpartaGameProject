@@ -124,6 +124,7 @@ function inputCheck() {
     });
   };
 
+
 function stat_reset() {
   $("#logo")[0].className = "start";
   $("#tag")[0].className = "start";
@@ -170,7 +171,6 @@ function gameOver() {
 $(function(event){
 
   start_page()
-
 
   var enemy00 = new enemy(0);
   var enemy01 = new enemy(1);

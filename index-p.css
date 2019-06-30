@@ -7,37 +7,37 @@
 #logo{
   height: 13%;
   top: 200px;
-  left: 290px;
+  left: 35px;
 }
 
 #g-logo{
   height: 12%;
   top: 135px;
-  left: 385px;
+  left: 35px;
 }
 
 #tag{
   height: 3%;
   top: 390px;
-  left: 375px;
+  left: 120px;
 }
 
 #g-tag{
   height: 5%;
   top: 280px;
-  left: 660px;
+  left: 250px;
 }
 
 #score-tag{
   height: 6%;
   top: 395px;
-  left: 505px;
+  left: 185px;
 }
 
 #score{
   font-size: 80px;
-  top: 370px;
-  left: 1360px;
+  top: 367px;
+  left: 690px;
 }
 
 .start-but{
@@ -52,7 +52,7 @@
   background-color: black;
   position: relative;
   top: 550px;
-  left: 795px;
+  left: 335px;
   border: black;
 }
 
@@ -62,8 +62,8 @@
   height: 47px;
   background-color: black;
   position: relative;
-  top: 670px;
-  left: 740px;
+  top: 490px;
+  left: 270px;
   border: black;
 }
 
@@ -120,51 +120,55 @@ h5{
 }
 
 #enemy0{
-  top: 150px;
-  left: 185px;
+  top: 120px;
+  left: 100px;
 }
 
 #enemy1{
-  top: 150px;
-  left: 1070px;
+  top: 120px;
+  left: 700px;
 }
 
 #enemy2{
   bottom: 190px;
-  left: 368px;
+  left: 100px;
 }
 
 #enemy3{
-  left: 1253px;
+  left: 700px;
   bottom: 190px;
 }
 
 #word0{
-  top: 374px;
-  left: 318px;
+  top: 250px;
+  left: 170px;
   font-size: 35px;
 }
 
 #word1{
-  top: 374px;
-  left: 1200px;
+  top: 250px;
+  left: 770px;
   font-size: 35px;
 }
 
 #word2{
   bottom: 150px;
-  left: 495px;
+  left: 170px;
   font-size: 35px;
 }
 
 #word3{
   bottom: 150px;
-  left: 1385px;
+  left: 773px;
   font-size: 35px;
 }
 
 #game-over{
   left: -500px;
+}
+
+.col-sm-offset-3{
+  left: 30px;
 }
 
 
